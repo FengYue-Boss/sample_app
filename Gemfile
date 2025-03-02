@@ -49,6 +49,9 @@ gem 'rexml'
 # gem ruby 3.5.0 no support also add in
 gem 'fiddle'
 
+# RSpec for testing
+gem 'rspec-rails', '~> 7.1', '>= 7.1.1'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -67,14 +70,18 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara', '3.35.3'
-  gem 'selenium-webdriver', '3.142.7'
-  gem 'webdrivers', '4.6.0'
-  gem 'rails-controller-testing', '1.0.5'
-  gem 'minitest', '5.11.3'
-  gem 'minitest-reporters', '1.3.8'
-  gem 'guard', '2.16.2'
-  gem 'guard-minitest', '2.4.6'
+  gem 'capybara', '~> 3.40'
+  gem 'selenium-webdriver', '~> 4.29', '>= 4.29.1'
+  gem 'webdrivers', '~> 5.3', '>= 5.3.1'
+  # gem 'rails-controller-testing', '1.0.5'
+  # gem 'minitest', '~> 5.14'
+  # gem 'minitest', '5.11.3'
+  # gem 'minitest-reporters', '1.3.8'
+  # gem 'guard', '2.16.2'
+  # gem 'guard-minitest', '2.4.6'
+
+  # RSpec for testing
+  # gem 'rspec-rails'
 end
 
 group :production do
