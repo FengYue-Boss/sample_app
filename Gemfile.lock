@@ -111,6 +111,7 @@ GEM
       tzinfo
     ffi (1.17.1-x64-mingw-ucrt)
     ffi (1.17.1-x86_64-linux-gnu)
+    fiddle (1.1.6)
     formatador (1.1.0)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
@@ -387,6 +388,7 @@ DEPENDENCIES
   brakeman
   capybara (= 3.35.3)
   debug
+  fiddle
   guard (= 2.16.2)
   guard-minitest (= 2.4.6)
   importmap-rails

@@ -45,6 +45,8 @@ gem 'mutex_m'
 gem 'matrix'
 # gem 'capybara', '~> 4.0'
 gem 'rexml'
+# gem ruby 3.5.0 no support also add in
+gem 'fiddle'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
